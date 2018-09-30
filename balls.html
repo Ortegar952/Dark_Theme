@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<style>
+
+    body{
+  background:black;
+}
+
+
+.rede{
+  width:10%;
+  height: 40px;
+  background: tomato;
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  cursor:pointer;
+  animation-name: myMove;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+}
+.blue{
+  width:10%;
+  height: 40px;
+  background:pink;
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  cursor:pointer;
+  animation-name:myMove;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-direction:reverse;
+}
+
+.yellow{
+  width:10%;
+  height: 40px;
+  background: linear-gradient(green,lightgreen);;
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  margin: 0 auto;
+  text-align:center;
+  border-radius: 50px;
+  transition: 0.2s ease;
+  cursor:pointer;
+  animation-name: myMove3;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+}
+
+.orange{
+  width:10%;
+  height: 40px;
+  background:orange;
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  margin: 0 200px;
+  text-align:center;
+  border-radius: 50px 0;
+  transition: 0.6s ease;
+  cursor:pointer;
+  animation-name: myMove3;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+}
+.green{
+  width:10%;
+  height: 40px;
+  background:rgb(214, 13, 204);
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  float:right;
+  margin-right: 300px;
+  text-align:center;
+  border-radius: 50px 0;
+  transition: 0.2s ease-out;
+  cursor:pointer;
+  animation-name: myMove4;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+
+/*.brown{
+  width:10%;
+  height: 40px;
+  background:rgb(44, 168, 218);
+  padding: 30px 0;
+  margin-top:60px;
+  color:white;
+  float:left;
+  margin-left: 300px;
+  text-align:center;
+  border-radius:50px 0;
+  transition: 0.3s;
+  cursor:pointer;
+  animation-name: myMove4;
+  animation-duration:2s ease-in;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+
+
+}*/
+
+@keyframes myMove{
+  from{transform: translateX(-200px)}
+  to{transform:translateX(1200px);}
+  
+}
+
+@keyframes myMove3{
+  from{transform: translateY(-900px)}
+  to{transform:translateY(400px);}
+}
+
+@keyframes myMove4{
+  from{transform: translateY(900px)}
+  to{transform:translateY(-1500px);}
+}
+
+@keyframes myTitle{
+	0%    { top: -100px }
+	100%  { top: 20px }
+}
+
+@keyframes myButton{
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+
+
+}
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    position:relative;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    animation:myTitle;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+
+}
+
+.button{
+    display:block;
+    margin:auto;
+    padding: 10px;
+    margin-top:20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    background:pink;
+    transition: 0.2s;
+    opacity: 0;
+    animation-name: myButton;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.button:hover{
+  transform: scale(1.03);
+  background: salmon;
+  transform: rotate(180deg);
+}
+.a-link{
+  text-decoration:none;
+}
+</style>
+<body>
+</div>
+    <h1 class="title">Room of Wonder </h1>
+    <a href="index.html" class="a-link"><button class="button">BACK</button></a>
+ </div>
+<div class="container">
+        <div class="rede">Red</div>
+        <div class="blue">Blue</div>
+        <div class="yellow">Yellow</div>
+        <div class="orange">Orange</div>
+        <div class="green">Purple</div>
+        <div class="brown">Pink</div>
+</div>
+</body>
+</html>

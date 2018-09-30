@@ -1,0 +1,405 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color:#e2e1e0;
+}
+
+.container{
+    width: 85%;
+    margin:auto;
+    overflow: hidden;
+}
+
+header{
+    background:black;
+    color:#fff;
+    padding: 20px;
+    min-height: 40px;
+    border-bottom:tomato 3px solid;
+}
+
+header .links{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li{
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+header #brand{
+    float: left;
+}
+
+header #brand h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top:20px;
+}
+
+header .highlight{
+    color: #e8491d;
+    font-weight:bold;
+}
+
+header .links:hover{
+    border-bottom: #e8491d solid 1px;
+    border-top: #e8491d solid 1px;
+
+    
+}
+
+#showcase{
+    height:500px;
+    background: url("../images/sky-light.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+#showcase h1{
+    margin-top:40px;
+}
+#cards{
+    margin-top:30px;
+}
+#cards .box{
+    float:left;
+    width: 30%;
+    padding: 17px;
+    border-right: solid 1px black;
+    text-align:justify;
+
+
+}
+
+/* Cards using Flex-Box */
+
+
+
+.wrapper{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.holders{
+    background: #fff;
+    border-radius: 2px;
+    height: 550px;
+  }
+
+.holders{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+.holders:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+    
+}
+  
+.holder-1, .holder-2, .holder-3
+{
+    margin-top: 100px;
+    flex-basis: 27%;
+    text-align:center;
+
+}
+
+.image{
+    max-width: 100%;
+    transition:0.5s;
+}
+.image:hover{
+    transform:scale(1.05);
+    border-radius: 15px;
+   }
+
+.in-paragraph, .second-paragraph{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.text-p{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row-item{
+    display:flex;
+    border: solid black 1px;
+    margin-top: 70px;
+}
+
+.title-1{
+    flex: 1;
+    background:url("../images/model.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 400px;
+    min-width: 50%;
+    transition:0.9s;
+}
+
+.title-2{
+    flex: 1;
+    background:url("../images/dark-road.jpg");
+    background-size: cover;
+    background-position:center;
+    height: 400px;
+    min-width: 50%;
+    transition:0.9s;
+
+}
+
+.title-2:hover{
+    cursor: pointer;
+    opacity:0.8;
+    transform:scale(1.01);
+}
+
+.title-1:hover{
+    cursor: pointer;
+    opacity:0.8;
+    transform:scale(1.01);
+    
+}
+
+.title-1 h2, .title-2 h2{
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.title-2 p, .title-1 p{
+    color: white;
+    font-size: 15px;
+    text-align:left;
+    padding-top:230px;
+    padding-left:30px;
+
+}
+
+.stats{
+
+    display:flex;
+}
+
+.icon{
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    background-color:#e8491d;
+    margin-top:40px;
+    height: 160px;
+    text-align: center;
+    padding-top: 10px;
+    border-right: solid 1px black;
+
+}
+
+.text-content p{
+    line-height: 0 ;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* MEDIA QUERIES FOR TABLETS */
+
+@media screen and (max-width: 768px){
+    header .links{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:18px;;
+    }
+    
+    
+    header li{
+        clear:left;
+        padding: 10px 10px;
+        width:100%;
+
+    
+    }
+    
+    header #brand{
+        float:none;
+        text-align:center;
+    }
+    
+    header nav{
+        float: none;
+        margin-top:3px;
+        text-align:center;
+    }
+    
+    #showcase{
+        height:490px;
+    
+    }
+    
+      .wrapper{
+        display: flex;
+        justify-content:center;
+        flex-direction:column;
+    
+    
+    }
+    
+    .holders{
+        background: #fff;
+        border-radius: 2px;
+        height:690px;
+      }
+    
+    
+
+     .row-item{
+        display:flex;
+        border: solid black 1px;
+        margin-top: 50px;
+        flex-direction:column;
+    }
+    
+    .title-1{
+        flex: 1;
+        background: #333 url("../images/model.jpg");
+        background-size: cover;
+        background-position:center;
+        height: 370px;
+        min-width: 100%;
+    }
+    
+    .title-2{
+        flex: 1;
+        background:url("../images/dark-road.jpg");
+        background-size: cover;
+        background-position:center;
+        height: 370px;
+        min-width: 100%;
+    
+    }
+    
+
+    .stats{
+    
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    
+    .icon{
+        flex: 1;
+        color: white;
+        font-weight: bold;
+        background-color:#e8491d;
+        margin-top:1px;
+        height: 160px;
+        padding-top: 10px;
+    
+    }
+    
+    .text-content p{
+        line-height:0 ;
+        font-size: 2.5em;
+        color:black;
+    
+    }
+    
+    .text-p{
+        width: 90%;
+        margin-bottom:80px;
+    }
+    
+
+}
+
+/* MEDIA QUERIES FOR PHONES */
+@media screen and (max-width: 515px){
+
+    header{
+        background:black;
+        color:#fff;
+        padding:0;
+        border-bottom:tomato 1px solid;
+    }
+    
+    header .links{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    
+    header li{
+        display:block;
+        padding:10px 0 10px 0;
+        text-align:left;
+    
+    }
+    
+    
+    ul.list{
+        padding:0;
+        margin:0;
+    }
+    
+    header #brand{
+        float:none;
+        text-align:center;
+    }
+    
+        
+     #showcase{
+            height:400px;
+            box-shadow: 10px 15px 15px black;
+        
+        }
+        
+    .holders{
+            background: #fff;
+            border-radius: 2px;
+            height:540px;
+          }
+        
+    .title-1 p, .title-2 p{
+           display:none;
+       }
+    
+    .in-paragraph h1, .second-paragraph h1{
+           font-size: 20px;
+       }
+    
+    
+    .text-content p{
+            line-height:0 ;
+            font-size: 1.5em;
+            color:black;
+        
+        }
+        
+    .text-p{
+            width: 80%;
+            text-align:justify;
+            margin-bottom:80px;
+        }
+    }
